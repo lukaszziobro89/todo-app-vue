@@ -1,10 +1,5 @@
 <script setup>
 
-import CardBasic from '@/views/pages/cards/card-basic/CardBasic.vue'
-import CardNavigation from '@/views/pages/cards/card-basic/CardNavigation.vue'
-import CardSolid from '@/views/pages/cards/card-basic/CardSolid.vue'
-
-
 import { useTodoStore } from '@/stores/todo.store'
 import { ref } from 'vue'
 import avatar4 from '@/assets/images/avatars/avatar-4.png'
@@ -84,16 +79,6 @@ const solidCardData = [
   <VRow
     style = "margin-left: 200px; margin-right: 200px"
   >
-<!--    <VCardActions class="justify-center">-->
-<!--      <VBtn-->
-<!--        block=""-->
-<!--        type="submit"-->
-<!--        @click.prevent="getTodos"-->
-<!--        variant="elevated">-->
-<!--        get todos-->
-<!--      </VBtn>-->
-<!--    </VCardActions>-->
-
     <VCol
       v-for="todo in todos"
       :key="todo.id"
@@ -113,10 +98,7 @@ const solidCardData = [
           >
             <img src="/tickbox.png" height="30" alt="Logo" />
           </VAvatar>
-
-<!--          <h6 class="text-h6 text-white">-->
             <VDivider color='white'/>
-<!--          </h6>-->
           <h6 class="text-h6 text-white">
             {{ todo.title }}
           </h6>

@@ -64,9 +64,6 @@ onMounted(() => {
             <VListItemTitle class="font-weight-semibold">
               {{ user }}
             </VListItemTitle>
-<!--            <VListItemSubtitle class="text-disabled">-->
-<!--              Admin-->
-<!--            </VListItemSubtitle>-->
           </VListItem>
 
           <VDivider class="my-2" />
